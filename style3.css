@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+body{
+  background-color: black;
+  font-family: 'Krona One', sans-serif;
+}
+
+#four{
+  color: yellow;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: red;
+  font-size: 50px;
+}
+
+#player-info {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  gap: 10px;
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid blue;
+  background-color: blue;
+  height: 450px;
+  width: 450px;
+  justify-content: center;
+  border-radius: 10%;
+
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid blue;
+  
+}
+
+.cell.player1 {
+  background-color: red;
+  color: red;
+}
+
+.cell.player2 {
+  background-color: yellow;
+  color: yellow;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: red;
+  color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#player1{
+  color: red;
+  font-family: 'Krona One', sans-serif;
+  position: absolute;
+  right: 300px;
+  font-size: 40px;
+  top: 580px;
+}
+
+#player2{
+  color: yellow;
+  font-family: 'Krona One', sans-serif;
+  position: absolute;
+  left: 300px;
+  font-size: 40px;
+  bottom: 35px;
+}

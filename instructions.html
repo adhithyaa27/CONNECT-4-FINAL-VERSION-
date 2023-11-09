@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I N S T R U C T I O N S</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 id="RULESANDREGULATIONS">RULES <b class="AND">AND</b> REGULATIONS</h1>
+
+    <div id="Instructions">
+        <div>
+            <p style="list-style-type:circle">
+                <li>Players take turns dropping one checker into the grid per turn .</li>
+                <li>The goal is to connect four checkers of the same color in a row, vertically, horizontally, or diagonally .</li>
+                <li>Other configurations, such as squares, don't count as winning combinations .</li>
+                <li>The game ends when there is a 4-in-a-row or a stalemate .</li>
+                <li>If no player is able to connect four when the spaces are filled, the game ends in a tie .</li>
+            </p>
+        </div>
+    </div> 
+
+    <div id="username">
+        <span>NICK NAME 1</span> 
+        <input id="input1" type="text" >
+    </div>
+
+    <div id="username2">
+        <span>NICK NAME 2</span> 
+        <input id="input2" type="text" >
+    </div>
+
+    <div id="letsplay">
+        <p id="button">LET'S PLAY</p>
+
+    </div>
+
+</body>
+</html>
+
+
+<script>
+    var letsplay = document.querySelector("#letsplay")
+    letsplay.addEventListener('click',()=>{
+        window.location.href='gamepage.html'
+    })
+</script>
+    
+<script src="app.js"></script>

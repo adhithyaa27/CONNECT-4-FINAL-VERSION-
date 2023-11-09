@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box ;
+    background-size: cover;
+}
+
+
+body{
+    background-image: url(./assets/F2.png);
+}
+
+
+#title{
+    color: red;
+    position: relative;
+    
+    top: 300px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 50px;  
+    text-align: center;
+}
+
+#four{
+    color: yellow;
+}
+
+.playButtonDiv img{
+    position: relative;
+    left: 600px;
+    top: 310px;
+    height: 150px;
+    width: 150px;
+   
+}
+
+#GO{
+    font-size: 90px;
+    font-family: 'Krona One', sans-serif;
+    color: red;
+    position: relative;
+    left: 780px;
+    top: 175px;
+}
+

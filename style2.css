@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    background-color: black;
+}
+
+
+
+
+#RULESANDREGULATIONS{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: red ;
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.AND{
+    color: yellow;
+}
+
+#Instructions{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    justify-content: space-between;
+    line-height: 150%;
+    font-family: 'Krona One', sans-serif;
+    position: relative;
+    top: 0px;
+}
+
+#username{
+    color: yellow;
+    font-family: 'Krona One', sans-serif;
+    border: 1px solid red;
+    background-color: red;
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 450px;
+    bottom: 10px;
+    font-size:x-large;
+    
+    
+}
+
+#username2{
+    color:yellow;
+    font-family: 'Krona One', sans-serif;
+    border: 1px solid red;
+    background-color: red;
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 450px;
+    bottom: 1px;
+    font-size:x-large;
+    
+    
+}
+
+
+
+#letsplay{
+    color: yellow;
+    font-family: 'Krona One', sans-serif;
+    border: 1px solid red;
+    background-color: red;
+    width: 200px;
+    position: relative;
+    left: 625px;
+    top: 50px;
+    text-align: center;
+    font-size: larger;
+}
+
+#input1{
+    background-color: red;
+    height: 39px;
+    width: 350px;
+    position: relative;
+    left: 220px;
+    bottom: 33px;
+    border: solid;
+}
+
+#input2{
+    background-color: red;
+    height: 39px;
+    width: 350px;
+    position: relative;
+    left: 220px;
+    bottom: 33px;
+    border: solid;
+    
+}
+
+#letsplay:hover{
+    background-color: blue;
+    border-color:blue ;
+}
