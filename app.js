@@ -19,13 +19,3 @@ var music = new Audio("./assets/a1.mp3")
 music.play()
 music.loop=true;
 
-function checkScreenWidth() {
-  const isMobile = window.innerWidth < 766;
-
-  if (isMobile) {
-    showMobilePopup();
-  } else {
-    removeMobilePopup();
-  }
-}
-
