@@ -17,15 +17,6 @@ function checkScreenWidth() {
     }
   }
   
-  function showMobilePopup() {
-    document.getElementById("mobilePopup").style.display = "flex";
-  }
-  
-  function removeMobilePopup() {
-    document.getElementById("mobilePopup").style.display = "none";
-  }
-  
-  window.addEventListener("DOMContentLoaded", checkScreenWidth);
-  window.addEventListener("resize", checkScreenWidth);
+ 
 
 
