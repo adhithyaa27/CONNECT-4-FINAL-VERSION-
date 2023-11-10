@@ -23,6 +23,7 @@ h1 {
 
 #player-info {
   margin: 20px 0;
+  width: 50vw;
 }
 
 p {
@@ -81,7 +82,7 @@ button:hover {
   color: red;
   font-family: 'Krona One', sans-serif;
   position: absolute;
-  right: 300px;
+  right: 200px;
   font-size: 40px;
   top: 580px;
 }
@@ -90,7 +91,7 @@ button:hover {
   color: yellow;
   font-family: 'Krona One', sans-serif;
   position: absolute;
-  left: 300px;
+  left: 200px;
   font-size: 40px;
-  bottom: 35px;
+  top: 580px;
 }

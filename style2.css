@@ -101,3 +101,23 @@ body{
     background-color: blue;
     border-color:blue ;
 }
+
+@media(max-width: 500px){
+    #Instructions{
+        font-size: 20px;
+    }
+    #username{
+        position: relative;
+        left: 20px;
+    }
+
+    #username2{
+        position: relative;
+        left: 20px;
+    }
+
+    #letsplay{
+        position: relative;
+        left: 20px;
+    }
+}

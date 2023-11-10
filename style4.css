@@ -21,3 +21,9 @@ body{
     top: 350px;
 } 
 
+@media (max-width: 500px) {
+    #winner{
+        position: relative;
+        top: 200px;
+    }
+}

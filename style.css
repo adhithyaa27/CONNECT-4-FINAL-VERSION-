@@ -45,3 +45,20 @@ body{
     top: 175px;
 }
 
+@media(max-width: 500px){
+    #title{
+        font-size: 30px;
+    }
+    #play-button{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 100px;
+    }
+    #GO{
+        font-size: 30px;
+        position: relative;
+        left: 180px;
+        top: 260px;
+    }
+}

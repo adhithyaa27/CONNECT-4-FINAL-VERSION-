@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       for (let row = numRows - 1; row >= 0; row--) { // pushes the coin from the bottom row to the first row
         if (boardArray[row][col] === 0) {  // while checking the loop current cell empty shows by 0
           boardArray[row][col] = currentPlayer;  // to shows the player2 options available to click
-          const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`); // doubt
+          const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`); // storing the clicked cell with row & col
           cell.classList.add(`player${currentPlayer}`);
           checkForWin(row, col);
           currentPlayer = currentPlayer === 1 ? 2 : 1; // switching turns
@@ -135,13 +135,3 @@ document.addEventListener("DOMContentLoaded", function() {
   music.play()
   music.loop=true;
   
-  function checkScreenWidth() {
-    const isMobile = window.innerWidth < 766;
-  
-    if (isMobile) {
-      showMobilePopup();
-    } else {
-      removeMobilePopup();
-    }
-  }
- 
