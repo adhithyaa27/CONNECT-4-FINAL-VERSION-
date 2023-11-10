@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentPlayer = 1;
     let winner = null;
   
-    for (let row = 0; row < numRows; row++) {
+    // nested loop iterates each cell in the board
+    for (let row = 0; row < numRows; row++) { 
       const rowArray = [];
       for (let col = 0; col < numCols; col++) {
         const cell = document.createElement("div");
@@ -29,24 +30,26 @@ document.addEventListener("DOMContentLoaded", function() {
         cell.addEventListener("click", () => handleCellClick(col));
       }
       boardArray.push(rowArray);
-    }
-  
+    } 
+
+    // game functions
     function handleCellClick(col) {
       music2.play()
-      if (winner) return; // Don't allow moves after the game is won
+      if (winner) return; // Don't allow moves after the game is winning the game
   
-      for (let row = numRows - 1; row >= 0; row--) {
-        if (boardArray[row][col] === 0) {
-          boardArray[row][col] = currentPlayer;
-          const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+      for (let row = numRows - 1; row >= 0; row--) { // pushes the coin from the bottom row to the first row
+        if (boardArray[row][col] === 0) {  // while checking the loop current cell empty shows by 0
+          boardArray[row][col] = currentPlayer;  // to shows the player2 options available to click
+          const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`); // doubt
           cell.classList.add(`player${currentPlayer}`);
           checkForWin(row, col);
-          currentPlayer = currentPlayer === 1 ? 2 : 1;
+          currentPlayer = currentPlayer === 1 ? 2 : 1; // switching turns
           break;
         }
       }
     }
-  
+    
+    // searching winner 
     function checkForWin(row, col) {
       const directions = [
         [1, 0], // Vertical
@@ -55,12 +58,12 @@ document.addEventListener("DOMContentLoaded", function() {
         [-1, 1], // Diagonal up-right
       ];
   
-      const player = boardArray[row][col];
+      const player = boardArray[row][col]; // retrives the turns of the player from boardArray
   
       for (const [dr, dc] of directions) {
         let count = 1;
         // Check in both directions
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 3; i++) {  // checks both directions in the specified direction both +ve & -ve directions
           const newRow1 = row + i * dr;
           const newCol1 = col + i * dc;
           if (
@@ -105,11 +108,12 @@ document.addEventListener("DOMContentLoaded", function() {
         handleGameResult(winner);
       }
     }
-  
+    
+    // Displaying result
     function handleGameResult(result) {
       let winnerName;
       if (result === "tie") {
-        winnerName = "Tie";
+        winnerName = "TIE";
       } else if (result === "player1") {
         winnerName = player1Name;
       } else if (result === "player2") {
