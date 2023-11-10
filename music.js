@@ -12,13 +12,3 @@ playbutton.addEventListener('click', () => {
     window.location.href = 'instructions.html';
 });
 
-function checkScreenWidth() {
-    const isMobile = window.innerWidth < 766;
-  
-    if (isMobile) {
-      showMobilePopup();
-    } else {
-      removeMobilePopup();
-    }
-  }
-  
